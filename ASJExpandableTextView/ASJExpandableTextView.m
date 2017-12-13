@@ -142,7 +142,8 @@ static CGFloat const kPadding = 1.05f;
 
 - (ASJInputAccessoryView *)asjInputAccessoryView
 {
-  return (ASJInputAccessoryView *)[[NSBundle mainBundle] loadNibNamed:@"ASJInputAccessoryView" owner:self options:nil][0];
+  
+  return (ASJInputAccessoryView *)[[NSBundle bundleWithIdentifier:@"org.cocoapods.ASJExpandableTextView"] loadNibNamed:@"ASJInputAccessoryView" owner:self options:nil][0];
 }
 
 #pragma mark - Setup
